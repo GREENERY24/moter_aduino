@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-
+#git업로드용 주석
 PINS = {
     "enableA": 18, # OUTA 쪽 제어 핀
     "enableB": 19, # OUTB 쪽 제어 핀
