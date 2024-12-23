@@ -4,7 +4,6 @@ import time
 TRIG = 5
 ECHO = 6
 
-GPIO.setmode(GPIO.BCM)
 GPIO.setup(TRIG, GPIO.OUT)
 GPIO.setup(ECHO, GPIO.IN)
 
@@ -20,5 +19,4 @@ def get_distance():
         end_time = time.time()
 
     duration = end_time - start_time
-    distance = (duration * 34300) / 2 # cm 단위
-    return distance
+    return (duration * 34300) / 2  # cm
